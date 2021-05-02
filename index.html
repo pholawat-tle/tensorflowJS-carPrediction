@@ -6,13 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
 
-        <!-- Import TensorFlow.js -->
         <script src="./tensorflow/tf.min.js"></script>
-        <!-- Import tfjs-vis -->
         <script src="./tensorflow/tfjs-vis.umd.min.js"></script>
-
-        <!-- Import the main script file -->
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="./style.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="loading"><h1>Loading...</h1></div>
+        <main>
+            <h1>Predict Miles Per Gallon</h1>
+            <form id="prediction-input" autocomplete="off">
+                <div class="">
+                    <label for="horsepower">Horsepower : </label>
+                    <input type="text" name="horsepower" required />
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        </main>
+    </body>
+    <script src="script.js"></script>
 </html>

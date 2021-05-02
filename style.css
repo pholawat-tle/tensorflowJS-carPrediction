@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+input {
+    font-size: 2rem;
+}
+
+button {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 2.5% 20%;
+}
+
+main {
+    margin-top: 10vh;
+    display: none;
+    transition: all 2s ease-in;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main h1 {
+    margin: 2.5%;
+    margin-bottom: 5%;
+}
+
+#prediction-input {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+#prediction-input div {
+    margin-bottom: 5%;
+}
+
+.loading {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation-name: flickering;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: all 2s ease-out;
+}
+
+@keyframes flickering {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
